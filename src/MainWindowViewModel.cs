@@ -45,7 +45,12 @@ namespace Todos
 
         private void ClearCompleted()
         {
-            var result = dialogService.ShowMessageBox(this, "Are you sure?", "Clear Completed", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            var result = dialogService.ShowMessageBox(this,
+                                                      "Are you sure?",
+                                                      "Clear Completed",
+                                                      MessageBoxButton.YesNo,
+                                                      MessageBoxImage.Warning);
+
             if (result == MessageBoxResult.Yes)
             {
                 foreach (var completed in Todos.Where(todo => todo.IsCompleted).ToArray())

@@ -1,6 +1,6 @@
-﻿using System.Windows;
-using GalaSoft.MvvmLight.Ioc;
-using MvvmDialogs;
+﻿//using System.Windows;
+//using GalaSoft.MvvmLight.Ioc;
+//using MvvmDialogs;
 
 namespace Todos
 {
